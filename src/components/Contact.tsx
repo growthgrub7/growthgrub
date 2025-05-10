@@ -63,11 +63,14 @@ const Contact = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
+        // Add a timeout to prevent long waits
+        signal: AbortSignal.timeout(5000)
       });
 
+      const data = await response.json();
+      
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to save message');
+        throw new Error(data.error || 'Failed to save message');
       }
 
       setStatus({ submitting: false, submitted: true, error: null });

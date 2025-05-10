@@ -97,7 +97,17 @@ const AdminLeadsPage: React.FC = () => {
                   <td className="py-2 px-4">{lead.phone}</td>
                   <td className="py-2 px-4">{lead.school}</td>
                   <td className="py-2 px-4 max-w-xs truncate" title={lead.message}>{lead.message}</td>
-                  <td className="py-2 px-4 text-sm text-gray-500">{lead.created_at ? new Date(lead.created_at).toLocaleString() : ''}</td>
+                  <td className="py-2 px-4 text-sm text-gray-500">
+                    {lead.created_at ? new Date(lead.created_at).toLocaleString('en-US', {
+                      year: 'numeric',
+                      month: '2-digit',
+                      day: '2-digit',
+                      hour: '2-digit',
+                      minute: '2-digit',
+                      second: '2-digit',
+                      hour12: true
+                    }) : ''}
+                  </td>
                 </tr>
               ))}
             </tbody>

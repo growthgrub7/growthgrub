@@ -1,85 +1,73 @@
-# Growth Grub - School Meal Service
+# Growth Grub - School Meal Delivery Service
 
-A web application for managing school meal services, built with React, TypeScript, and Supabase.
+A web application for Growth Grub, a school meal delivery service, allowing schools to contact and inquire about services.
 
 ## Features
 
-- Contact form with email notifications
-- Admin dashboard for lead management
-- Responsive design with modern UI
-- Real-time updates using Supabase
+- Modern, responsive UI built with React and Tailwind CSS
+- Contact form with multiple integrations:
+  - Email notifications via EmailJS
+  - Database storage in Supabase
+  - Google Sheets integration for lead tracking
+  - WhatsApp notifications via Twilio
+- Admin portal to view and manage leads
 
-## Prerequisites
+## Tech Stack
 
-- Node.js (v14 or higher)
-- npm or yarn
-- Supabase account
-- EmailJS account
-- Twilio account (for WhatsApp notifications)
+- Frontend: React, TypeScript, Tailwind CSS, Framer Motion
+- Backend: Express.js, Node.js
+- Database: Supabase
+- APIs: Twilio WhatsApp, Google Sheets, EmailJS
 
-## Environment Variables
+## Setup & Installation
 
-Create a `.env` file in the root directory with the following variables:
+1. **Clone the repository**
+   ```
+   git clone https://github.com/yourusername/growth-grub.git
+   cd growth-grub
+   ```
 
-```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
-```
+2. **Install dependencies**
+   ```
+   npm install
+   ```
 
-## Installation
+3. **Environment Variables**
+   Copy `.env.example` to `.env` and fill in your credentials:
+   ```
+   cp .env.example .env
+   ```
+   
+   Required environment variables:
+   - Twilio credentials for WhatsApp notifications
+   - Supabase URL and API key
+   - Google Sheets API credentials
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/growth-grub.git
-cd growth-grub
-```
+4. **Start the development server**
+   ```
+   npm run dev
+   ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+5. **Start the backend server**
+   ```
+   node server.js
+   ```
 
-3. Start the development server:
-```bash
-npm run dev
-```
+## Deployment
 
-4. In a separate terminal, start the backend server:
-```bash
-node server.js
-```
+### GitHub Pages (Frontend Only)
 
-## Building for Production
+1. Update `vite.config.ts` to include your repository name as the base path
+2. Run: `npm run build`
+3. Deploy to GitHub Pages: `npm run deploy`
 
-```bash
-npm run build
-```
+### Full Stack Deployment
 
-## Project Structure
+For a complete deployment with backend functionality, consider:
+- Vercel or Netlify for frontend
+- Heroku, Render, or Railway for the Express backend
+- Keep your Supabase instance running
 
-```
-growth-grub/
-├── src/
-│   ├── components/     # React components
-│   ├── pages/         # Page components
-│   ├── lib/           # Utility functions and configurations
-│   └── App.tsx        # Main application component
-├── server.js          # Backend server
-├── package.json       # Project dependencies
-└── README.md         # Project documentation
-```
+## Contact
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+For questions or support, contact: growthgrub7@gmail.com 
