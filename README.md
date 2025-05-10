@@ -23,8 +23,8 @@ A web application for Growth Grub, a school meal delivery service, allowing scho
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/yourusername/growth-grub.git
-   cd growth-grub
+   git clone https://github.com/growthgrub7/growthgrub.git
+   cd growthgrub
    ```
 
 2. **Install dependencies**
@@ -70,4 +70,4 @@ For a complete deployment with backend functionality, consider:
 
 ## Contact
 
-For questions or support, contact: growthgrub7@gmail.com 
+For questions or support, contact: growthgrub7@gmail.com
