@@ -34,32 +34,32 @@ if (process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN) {
   console.warn('Twilio credentials not found in environment variables');
 }
 
-// Initialize Supabase client with explicit URL and key
-const supabaseUrl = 'https://uvzpootdkurdeqpnepxu.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV2enBvb3Rka3VyZGVxcG5lcHh1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NjU3NzkwMCwiZXhwIjoyMDYyMTUzOTAwfQ.o_figuGKWvLzZgGtDKNacS6PX1HKGK0xk-_YFeprf6g';
+// Initialize Supabase client with environment variables
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-// Initialize Google Sheets with the working configuration
+// Initialize Google Sheets with environment variables
 const auth = new google.auth.GoogleAuth({
   credentials: {
     type: "service_account",
-    project_id: "grwoth-grub",
-    private_key_id: "231dfc8fdbabd3ef71e0b4dd011c6713d3c806b0",
-    private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDq712WXWdGNr69\n9vjZcRh++EHqI29DZPj5lXrLKSXFlr96vni4CV4YDwtJAGv2iOrFL+YKjFxN8TyM\n6VygUg5uSq7de83eYKNiCDI29DBKCHwXm1oC43WiA3+4UkRJhkiUhePRsWk69jql\nJPYcxcA6WyoWnjghislHY7zs77sWcvNvBb8Z3/bUG9aRqByxJIp5VCsXInQTKdo7\nI1MCPxCOTNpha5pX1+KCS83H+xOjU1nZlHUsBp7fHJQJDMi+efedINVuo6bHv2X+\nMN+HKLTdMjZ1UwpVHMc+HkXX0qzpWNWOGeobXBfDbDHykizOD46pnEuBP15AAyb9\nvLh9ei4RAgMBAAECggEAAaOmyjw7LhoZHcMR03FxAVCnkaiF7F2/SLRBTqi8abwb\nHRJIl1pvGBJz8ZAHVWTm5C0Nht0HkrVeEBPt6atSDHT2YEBlnFcv/vHUjZTAmzg1\nXXQ7VPtBm944YceUmYq8LqCMiWXjpjk+dzn0p2HibQ707cvCQV0WsHNCtX9hlYXJ\n0H3zm9pHb2Ro13o68F+a06eo0cS0viQq8XFzhK/2skLMCh9Iox1JIo0B+YR2drEI\nf8dRVhiEny6GqQ5ckdveW5yWcYvepMaG5u3TRQWAykMRvG6Ah/BHpffYikqjpnZR\nIMPUi05c8pAnooG2GLJcV5OV73G8S/uB0gSO133ZkQKBgQD/TWfxD/FrttzfZn7V\nobgr30Q9IRmb41SMIb5601z4fLmjGzcLkLVBMxpm4f+eegrkrGpplqLkW20Yafcp\nzO6mBFUigRzBWPVzOQzb8jCwu3cRydvjlh5NhhgOUX33J/RhojkDXsA25cHZHEec\n+OMxsx+ckiszsZsIce0hHGcEzQKBgQDrk7Y4g+Bi/amuX+eLgDQdb82ayZgdDQOk\nsKVTbVBTH9q0j3D+XCwB7kNsCuz+JuzwhfWEbym+rmOszNFfKPYfvlWf+owl7mnW\nw3QynO8BJO3EvT8cGkV8DykKlPIiJQ9E2arnszlJg7daJW7F08w2IVBpGVRzfc08\n9nIZZAvuVQKBgQCGe2XXS8imLssmOr1xFyEGqzMs6DSvMw6kSlomJRSCKGE5E+rp\nAq8Xyy2LKF0YQ71dO51KRXlExQwwohD6SeMkPIAEDvLwvkV9Dn5BldAkKHvOOQDF\nX5xSxeICGNc7zCYlD+jsZ4rk4B4+mXD3tPsogOyT80MildnOlwSMPoPduQKBgBqo\nRF5wzdtlyOWqhJEMmNkb5bA2T7g52MeyFYMzQ3ukhyMXeDnQREqTo51+PwMjdHxj\nLD0oNxkUssLDCo4yHGfLKfVIbMN+Dwv2Yhe4GnOOsjkpERMlBefb71D7OcsTVn78\nApLlfP4MoZrZ0YchSGJ3spmx/BR1j9vuJ0soPxFhAoGAMH4KW8SVHDo/ek9H+SmC\n6ZhMy3Q2WB/576Ldx0tGE2nTWTieu5PDhvXouCxBhhyteDycInn6JRDojuZZqrrQ\nUoa6JANmLI4s1pq/VoLhvrfLUeYpy+uiRZVcXkG/0ECUn9Ozvf414F/18H8aMqqv\nHFCihUeXssKsEjqYe3aBy00=\n-----END PRIVATE KEY-----\n",
-    client_email: "growth-grub-service@grwoth-grub.iam.gserviceaccount.com",
-    client_id: "102183284194744389030",
+    project_id: process.env.GOOGLE_SHEETS_PROJECT_ID,
+    private_key_id: process.env.GOOGLE_SHEETS_PRIVATE_KEY_ID,
+    private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY,
+    client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+    client_id: process.env.GOOGLE_SHEETS_CLIENT_ID,
     auth_uri: "https://accounts.google.com/o/oauth2/auth",
     token_uri: "https://oauth2.googleapis.com/token",
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
-    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/growth-grub-service%40grwoth-grub.iam.gserviceaccount.com",
+    client_x509_cert_url: `https://www.googleapis.com/robot/v1/metadata/x509/${process.env.GOOGLE_SHEETS_CLIENT_EMAIL}`,
     universe_domain: "googleapis.com"
   },
   scopes: ['https://www.googleapis.com/auth/spreadsheets']
 });
 
 const sheets = google.sheets({ version: 'v4', auth });
-const SPREADSHEET_ID = '1SQdl4yNYiPbzpeWr8Wa85BDql69GH9tTLL8cW3x5NXo';
+const SPREADSHEET_ID = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
 
 app.post('/api/contact', async (req, res) => {
   console.log('Received contact form submission:', req.body);

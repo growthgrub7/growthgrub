@@ -3,6 +3,9 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
+// Backend URL - change this when deploying
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
 interface FormStatus {
   submitting: boolean;
   submitted: boolean;
@@ -57,7 +60,7 @@ const Contact = () => {
       }
 
       // Then try to save to database
-      const response = await fetch('http://localhost:3000/api/contact', {
+      const response = await fetch(`${API_BASE_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
