@@ -60,10 +60,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="order-2 md:order-1"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 relative inline-block">
-              Our Story
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-green-400 transform -translate-y-1"></span>
-            </h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <motion.p custom={1} variants={paragraphVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                 As an M-Pharmacy graduate with a strong academic foundation and a deep passion for health and nutrition, my journey into the world of children's nutrition began in an unexpected way. After a successful career as a team lead in a reputed organization, I chose to focus on raising my three children - a decision that would later inspire Growth Grub's mission.
