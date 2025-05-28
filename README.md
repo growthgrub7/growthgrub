@@ -71,3 +71,6 @@ For a complete deployment with backend functionality, consider:
 ## Contact
 
 For questions or support, contact: growthgrub7@gmail.com
+
+## Latest Update
+- Updated logo paths and fixed deployment configuration
