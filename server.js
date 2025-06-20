@@ -5,6 +5,8 @@ import twilio from 'twilio';
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Load environment variables
 dotenv.config();
@@ -60,6 +62,12 @@ const auth = new google.auth.GoogleAuth({
 
 const sheets = google.sheets({ version: 'v4', auth });
 const SPREADSHEET_ID = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files from the 'dist' directory
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.post('/api/contact', async (req, res) => {
   console.log('Received contact form submission:', req.body);
@@ -168,6 +176,11 @@ app.get('/api/leads', async (req, res) => {
     console.error('Error:', error);
     res.status(500).json({ success: false, error: error.message });
   }
+});
+
+// Place this after all API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
