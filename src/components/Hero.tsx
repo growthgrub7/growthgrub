@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bgImg from '../assets/home.jpeg';
+import bgImg from '../assets/home-bg-test.jpeg';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -13,13 +13,8 @@ const Hero = () => {
         minHeight: '100vh',
       }}
     >
-      {/* Overlay to dim the background image */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
-        transition={{ duration: 1 }}
-        className="absolute inset-0 bg-black backdrop-blur-sm z-0" 
-      />
+      {/* Dim overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50 z-0" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <motion.h1 
