@@ -6,7 +6,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/</loc>
+    <loc>https://growthgrub.com/</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/about</loc>
+    <loc>https://growthgrub.com/about</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,7 +22,7 @@
   
   <!-- Meals Page -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/meals</loc>
+    <loc>https://growthgrub.com/meals</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
   
   <!-- Mission Page -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/mission</loc>
+    <loc>https://growthgrub.com/mission</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -38,7 +38,7 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/contact</loc>
+    <loc>https://growthgrub.com/contact</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -46,7 +46,7 @@
   
   <!-- Testimonials Page -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/testimonials</loc>
+    <loc>https://growthgrub.com/testimonials</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -54,7 +54,7 @@
   
   <!-- School Food Services -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/school-food</loc>
+    <loc>https://growthgrub.com/services/school-food</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -62,7 +62,7 @@
   
   <!-- Party Orders -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/party-orders</loc>
+    <loc>https://growthgrub.com/services/party-orders</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -70,7 +70,7 @@
   
   <!-- Kids Meals -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/kids-meals</loc>
+    <loc>https://growthgrub.com/services/kids-meals</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -78,7 +78,7 @@
   
   <!-- Toddler Meals -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/toddler-meals</loc>
+    <loc>https://growthgrub.com/services/toddler-meals</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -86,7 +86,7 @@
   
   <!-- Primary School Meals -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/primary-school-meals</loc>
+    <loc>https://growthgrub.com/services/primary-school-meals</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -94,7 +94,7 @@
   
   <!-- Junior Meals -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/junior-meals</loc>
+    <loc>https://growthgrub.com/services/junior-meals</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -102,7 +102,7 @@
   
   <!-- Teen Meals -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/teen-meals</loc>
+    <loc>https://growthgrub.com/services/teen-meals</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -110,7 +110,7 @@
   
   <!-- Telugu Kids Food -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/telugu-kids-food</loc>
+    <loc>https://growthgrub.com/services/telugu-kids-food</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -118,35 +118,35 @@
   
   <!-- Location-specific pages -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/locations/hyderabad</loc>
+    <loc>https://growthgrub.com/locations/hyderabad</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/locations/hitech-city</loc>
+    <loc>https://growthgrub.com/locations/hitech-city</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/locations/gachibowli</loc>
+    <loc>https://growthgrub.com/locations/gachibowli</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/locations/kokapet</loc>
+    <loc>https://growthgrub.com/locations/kokapet</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/locations/narsingi</loc>
+    <loc>https://growthgrub.com/locations/narsingi</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -154,21 +154,21 @@
   
   <!-- Service + Location combinations -->
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/school-food/hyderabad</loc>
+    <loc>https://growthgrub.com/services/school-food/hyderabad</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/party-orders/hyderabad</loc>
+    <loc>https://growthgrub.com/services/party-orders/hyderabad</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://growthgrub7.github.io/growthgrub/services/kids-meals/hyderabad</loc>
+    <loc>https://growthgrub.com/services/kids-meals/hyderabad</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
