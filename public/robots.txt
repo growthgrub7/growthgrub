@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://growthgrub.com/sitemap.xml
+Sitemap: https://growthgrub7.github.io/growthgrub/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
