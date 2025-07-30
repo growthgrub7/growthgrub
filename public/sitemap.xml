@@ -1,23 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://growthgrub.com/</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- About Page -->
   <url>
-    <loc>https://growthgrub.com/#/about</loc>
+    <loc>https://growthgrub.com/about</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Meals Page -->
   <url>
-    <loc>https://growthgrub.com/#/meals</loc>
+    <loc>https://growthgrub.com/meals</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Mission Page -->
+  <url>
+    <loc>https://growthgrub.com/mission</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Contact Page -->
   <url>
-    <loc>https://growthgrub.com/#/mission</loc>
+    <loc>https://growthgrub.com/contact</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Testimonials Page -->
+  <url>
+    <loc>https://growthgrub.com/testimonials</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- School Food Services -->
   <url>
-    <loc>https://growthgrub.com/#/contact</loc>
-    <priority>0.7</priority>
+    <loc>https://growthgrub.com/services/school-food</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+  
+  <!-- Party Orders -->
+  <url>
+    <loc>https://growthgrub.com/services/party-orders</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Kids Meals -->
+  <url>
+    <loc>https://growthgrub.com/services/kids-meals</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Toddler Meals -->
+  <url>
+    <loc>https://growthgrub.com/services/toddler-meals</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Primary School Meals -->
+  <url>
+    <loc>https://growthgrub.com/services/primary-school-meals</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Junior Meals -->
+  <url>
+    <loc>https://growthgrub.com/services/junior-meals</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Teen Meals -->
+  <url>
+    <loc>https://growthgrub.com/services/teen-meals</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Telugu Kids Food -->
+  <url>
+    <loc>https://growthgrub.com/services/telugu-kids-food</loc>
+    <lastmod>2025-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset> 
