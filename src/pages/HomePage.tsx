@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImg from '../assets/home.jpeg';
+import bgImg from '../assets/home-bg-test.jpeg';
 import Hero from '../components/Hero';
 
 const HomePage = () => {
